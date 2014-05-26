@@ -1,0 +1,39 @@
+{
+  "name": "find-css-class",
+  "version": "0.1.0",
+  "description": "Get the class into the project",
+  "license": "MIT",
+  "repository": "AlessandroMinoccheri/find-css-class",
+  "bin": {
+    "package-info": "cli.js"
+  },
+  "author": {
+    "name": "Alessandro Minoccheri",
+    "email": "alessandro.minoccheri@gmail.com",
+    "url": "https://github.com/AlessandroMinoccheri/"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "class",
+    "npm",
+    "package",
+    "package.json",
+    "css",
+    "module"
+  ],
+  "dependencies": {
+    "got": "^0.3.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
