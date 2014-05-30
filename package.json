@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": "AlessandroMinoccheri/find-css-class",
   "bin": {
-    "package-info": "cli.js"
+    "find-css-class": "cli.js"
   },
   "author": {
     "name": "Alessandro Minoccheri",
