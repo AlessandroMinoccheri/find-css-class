@@ -1,36 +1,22 @@
 {
   "name": "find-css-class",
-  "version": "0.1.0",
-  "description": "Get the class into the project",
-  "license": "MIT",
-  "repository": "AlessandroMinoccheri/find-css-class",
-  "bin": {
-    "find-css-class": "cli.js"
-  },
-  "author": {
-    "name": "Alessandro Minoccheri",
-    "email": "alessandro.minoccheri@gmail.com",
-    "url": "https://github.com/AlessandroMinoccheri/"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
+  "version": "0.0.0",
+  "description": "npm package to find css class into files or directory",
+  "main": "cli.js",
   "scripts": {
-    "test": "mocha"
+    "test": "test"
   },
-  "files": [
-    "index.js",
-    "cli.js"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlessandroMinoccheri/find-css-class.git"
+  },
   "keywords": [
-    "class",
-    "npm",
-    "package",
-    "package.json",
-    "css",
-    "module"
+    "css"
   ],
-  "devDependencies": {
-    "mocha": "*"
-  }
+  "author": "Alessandro Minoccheri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlessandroMinoccheri/find-css-class/issues"
+  },
+  "homepage": "https://github.com/AlessandroMinoccheri/find-css-class"
 }
