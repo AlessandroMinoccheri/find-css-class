@@ -2,7 +2,6 @@
 'use strict';
 var pkg = require('./package.json');
 var find = require('./index');
-var input = process.argv[2];
 
 function help() {
 	console.log(pkg.description);
@@ -24,12 +23,31 @@ if (process.argv.indexOf('-v') !== -1 || process.argv.indexOf('--version') !== -
 	return;
 }*/
 
-find(input, function (err, version) {
-	if (err) {
-		console.error(err);
-		process.exit(1);
-		return;
-	}
+/*process.argv.forEach(function (val, index, array) {
+	find(input(val), function (err, version) {
+		if (err) {
+			console.error(err);
+			process.exit(1);
+			return;
+		}
 
-	console.log(version);
-});
+		console.log(version);
+	});
+});*/
+
+var args = process.argv[2];
+if((args != null) && (args != '') && (args != undefined)){
+	find(args, function (err, version) {
+		if (err) {
+			console.error(err);
+			process.exit(1);
+			return;
+		}
+
+		console.log(version);
+	});
+}
+
+return;
+
+

@@ -7,7 +7,9 @@ RegExp.quote = function(str) {
 };
 
 module.exports = function (name, cb) {
-	fs.readFile('/Users/alessandrominoccheri/Sites/klikkahotel.com/css/backend/_style.css', 'utf8', function (err,data) {
+	console.log(name);
+	// /Users/alessandrominoccheri/Sites/klikkahotel.com/css/backend/_style.css
+	fs.readFile(name, 'utf8', function (err,data) {
 		if (err) {
 		    return console.log(err);
 		}
@@ -21,6 +23,6 @@ module.exports = function (name, cb) {
 		else
 			found = 0;
 
-		console.log('found: ' + found);
+		console.log('found in ' + name + ': ' + found + ' match of ' + class_to_find);
 	});
 };
