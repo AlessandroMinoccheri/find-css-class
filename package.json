@@ -1,6 +1,6 @@
 {
   "name": "find-css-class",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "npm package to find css class into files or directory",
   "main": "cli.js",
   "scripts": {
@@ -9,6 +9,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/AlessandroMinoccheri/find-css-class.git"
+  },
+  "bin": {
+    "find-css-class": "cli.js"
   },
   "keywords": [
     "css"
