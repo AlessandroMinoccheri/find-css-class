@@ -3,16 +3,17 @@
 var pkg = require('./package.json');
 var find = require('./index');
 
-var args = process.argv[2];
-if((args != null) && (args != '') && (args != undefined)){
-	find(args, function (err, version) {
+var find_class = process.argv[2];
+var folder = process.argv[3];
+if((find != null) && (find != '') && (find != undefined) & (folder != null) && (folder != '') && (folder != undefined)){
+	find(find_class, folder, function (err, finded) {
 		if (err) {
 			console.error(err);
 			process.exit(1);
 			return;
 		}
 
-		console.log(version);
+		console.log(finded);
 	});
 }
 
