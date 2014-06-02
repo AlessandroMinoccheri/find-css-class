@@ -1,10 +1,14 @@
 {
   "name": "find-css-class",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "npm package to find css class into files or directory",
+  "license": "MIT",
   "main": "cli.js",
   "scripts": {
     "test": "test"
+  },
+  "engines": {
+    "node": ">=0.10.0"
   },
   "repository": {
     "type": "git",
@@ -13,6 +17,10 @@
   "bin": {
     "find-css-class": "cli.js"
   },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
   "keywords": [
     "css"
   ],
