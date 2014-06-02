@@ -28,15 +28,19 @@ $ npm install --global find-css-class
 ```
 
   Usage
+
   ```
   $ find-css-class <class-to-find> <folder-name-or-css-file>
-
+  ```
+  
   Example
+  
   ```
   $ find-css-class clear css/style.css
-```
+  ```
 
 It will prints:
+
 ```
 found in css/style.css 2 match of clear
 ```
@@ -51,6 +55,7 @@ $ find-css-class clear css
 ```
 
 In this case the package search inside the directory all css file inside it and print result like this:
+
 ```
 found in css/style.css 2 match of clear
 found in css/directory/other.css 1 match of clear
