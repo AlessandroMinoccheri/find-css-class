@@ -20,6 +20,10 @@ if (!input || process.argv.indexOf('-h') !== -1 || process.argv.indexOf('--help'
 	return;
 }
 
+if (process.argv.indexOf('-v') !== -1 || process.argv.indexOf('--version') !== -1) {
+	console.log(pkg.version);
+	return;
+}
 
 if((find != null) && (find != '') && (find != undefined) & (folder != null) && (folder != '') && (folder != undefined)){
 	find(input, folder, function (err, finded) {
