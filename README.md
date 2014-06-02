@@ -61,6 +61,36 @@ found in css/style.css 2 match of clear
 found in css/directory/other.css 1 match of clear
 ```
 
+If you would like to have an help you can write into your console
+
+  ```
+  $ find-css-class -h
+  ```
+
+It will prints
+
+```
+npm package to find css class into files or directory
+
+Usage
+  $ find-css-class <css-class-to-find> <folder-or-file-to-search>
+
+Example
+  $ find-css-class clear css/style.css
+```
+
+If you would like to see the version of the package you can write into your console
+
+```
+  $ find-css-class -v
+  ```
+
+  It will prints
+
+  ```
+  0.0.7
+  ```
+
 ## License
 
 The MIT License (MIT)
