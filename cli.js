@@ -2,6 +2,8 @@
 'use strict';
 var pkg = require('./package.json');
 var find = require('./index');
+var input = process.argv[2];
+var folder = process.argv[3];
 
 function help() {
 	console.log(pkg.description);
@@ -18,10 +20,9 @@ if (!input || process.argv.indexOf('-h') !== -1 || process.argv.indexOf('--help'
 	return;
 }
 
-var find_class = process.argv[2];
-var folder = process.argv[3];
+
 if((find != null) && (find != '') && (find != undefined) & (folder != null) && (folder != '') && (folder != undefined)){
-	find(find_class, folder, function (err, finded) {
+	find(input, folder, function (err, finded) {
 		if (err) {
 			console.error(err);
 			process.exit(1);
