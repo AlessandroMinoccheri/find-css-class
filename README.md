@@ -28,9 +28,11 @@ $ npm install --global find-css-class
 ```
 
   Usage
+  ```
   $ find-css-class <class-to-find> <folder-name-or-css-file>
 
   Example
+  ```
   $ find-css-class clear css/style.css
 ```
 
