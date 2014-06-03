@@ -22,7 +22,6 @@ function getDirectoryFiles(directory, callback) {
 }
 
 module.exports = function (css_class, name, cb) {
-	// /Users/alessandrominoccheri/Sites/klikkahotel.com/css/backend/_style.css
 	var path_explode = name.split('/');
 	var last_value = path_explode[path_explode.length-1];
 	if(last_value.indexOf('.css') > 0){
@@ -39,7 +38,7 @@ module.exports = function (css_class, name, cb) {
 			else
 				found = 0;
 
-			console.log('found in ' + name + ': ' + found + ' match of ' + class_to_find);
+			cb(null, 'found in: ' + name + ': ' + found + ' match of ' + class_to_find);
 		});
 	}
 	else{
@@ -61,7 +60,7 @@ module.exports = function (css_class, name, cb) {
 						else
 							found = 0;
 
-						console.log('found in ' + file + ': ' + found + ' match of ' + class_to_find);
+						cb(null, 'found in: ' + file + ': ' + found + ' match of ' + class_to_find);
 				    });
 				}
 			});
