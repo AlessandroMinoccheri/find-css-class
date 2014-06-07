@@ -28,7 +28,9 @@
     "cli.js"
   ],
   "keywords": [
-    "css"
+    "css",
+    "class",
+    "find"
   ],
   "author": "Alessandro Minoccheri",
   "license": "MIT",
