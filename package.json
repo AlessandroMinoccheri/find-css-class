@@ -1,6 +1,6 @@
 {
   "name": "find-css-class",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "npm package to find css class into files or directory",
   "license": "MIT",
   "main": "cli.js",
