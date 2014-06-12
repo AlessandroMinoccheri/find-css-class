@@ -1,6 +1,6 @@
 # find-css-class
 
-> Find a class inside a css / html file, or more css / html files inside a directory
+> Find a class inside a css/html/php file, or more css/html/php files inside a directory
 
 https://www.npmjs.org/package/find-css-class
 
@@ -46,7 +46,7 @@ found in css/style.css 2 match of clear
 ```
 
 ## OPTIONS
-You can specify in the second argument or the css file, or an html file, or a directory, the package can search recursively all css/html files inside the directory and search the class name inside that files.
+You can specify in the second argument or the css file, or an html file, or a php file, or a directory, the package can search recursively all css/html/php files inside the directory and search the class name inside that files.
 
 So you can write this to search inside a directory:
 
@@ -54,12 +54,13 @@ So you can write this to search inside a directory:
 $ find-css-class clear public
 ```
 
-In this case the package search inside the directory all css and html file inside it and print result like this:
+In this case the package search inside the directory all css, html and php file inside it and print result like this:
 
 ```
 found in css/style.css 2 match of clear
 found in css/directory/other.css 1 match of clear
 found in index.html 1 match of clear
+found in test.php 3 match of clear
 ```
 
 If you would like to have an help you can write into your console
