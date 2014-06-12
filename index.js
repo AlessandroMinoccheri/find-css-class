@@ -43,7 +43,7 @@ module.exports = function (css_class, name, cb) {
 		});
 	}
 	else{
-		if((last_value.indexOf('.html') > 0) || (last_value.indexOf('.php') > 0)){
+		if((last_value.indexOf('.html') > 0) || (last_value.indexOf('.php') > 0) || (last_value.indexOf('.ctp') > 0)){
   			fs.readFile(name, 'utf8', function (err,data) {
 				if (err)
 				    return console.log(err);
@@ -85,8 +85,8 @@ module.exports = function (css_class, name, cb) {
 					    });
 					}
 					else{
-						if((last_value.indexOf('.html') > 0) || (last_value.indexOf('.php') > 0)){
-							fs.readFile(name, 'utf8', function (err,data) {
+						if((last_value.indexOf('.html') > 0) || (last_value.indexOf('.php') > 0) || (last_value.indexOf('.ctp') > 0)){
+							fs.readFile(file, 'utf8', function (err,data) {
 								if (err)
 								    return console.log(err);
 
@@ -99,7 +99,7 @@ module.exports = function (css_class, name, cb) {
 								else
 									found = 0;
 
-								cb(null, 'found in: ' + name + ': ' + found + ' match of ' + class_to_find);
+								cb(null, 'found in: ' + file + ': ' + found + ' match of ' + class_to_find);
 							});
 						}
 					}
