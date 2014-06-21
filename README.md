@@ -92,7 +92,7 @@ If you would like to see the version of the package you can write into your cons
   It will prints
 
   ```
-  0.1.4
+  0.1.7
   ```
 
 ## License
