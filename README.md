@@ -1,6 +1,6 @@
 # find-css-class
 
-> Find a class inside a css/html/php/ctp/tpl file, or more css/html/php/ctp/tpl files inside a directory
+> Find a class inside a css/html/php/ctp/tpl file, or more css/html/php/ctp/tpl/asp files inside a directory
 
 https://www.npmjs.org/package/find-css-class
 
@@ -46,7 +46,7 @@ found in css/style.css 2 match of clear
 ```
 
 ## OPTIONS
-You can specify in the second argument or the css file, or an html file, or a php file, or a ctp file, or a tpl file, or a directory, the package can search recursively all css/html/php/ctp files inside the directory and search the class name inside that files.
+You can specify in the second argument or the css file, or an html file, or a php file, or a ctp file, or a tpl file, or a asp file, or a directory, the package can search recursively all css/html/php/ctp files inside the directory and search the class name inside that files.
 
 So you can write this to search inside a directory:
 
@@ -54,7 +54,7 @@ So you can write this to search inside a directory:
 $ find-css-class clear public
 ```
 
-In this case the package search inside the directory all css, html, php, ctp and tpl file inside it and print result like this:
+In this case the package search inside the directory all css, html, php, ctp, tpl and asp files inside it and print result like this:
 
 ```
 found in css/style.css 2 match of clear
@@ -63,6 +63,7 @@ found in index.html 1 match of clear
 found in test.php 3 match of clear
 found in test.ctp 2 match of clear
 found in test.tpl 0 match of clear
+found in test.asp 1 match of clear
 ```
 
 If you would like to have an help you can write into your console
@@ -92,7 +93,7 @@ If you would like to see the version of the package you can write into your cons
   It will prints
 
   ```
-  0.1.7
+  0.1.8
   ```
 
 ## License
