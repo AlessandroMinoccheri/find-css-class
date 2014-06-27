@@ -1,7 +1,7 @@
 {
   "name": "find-css-class",
-  "version": "0.1.7",
-  "description": "npm package to find css class into css/html/php/ctp/tpl files, or directory",
+  "version": "0.1.8",
+  "description": "npm package to find css class into css/html/php/ctp/tpl/asp files, or directory",
   "license": "MIT",
   "main": "cli.js",
   "scripts": {
